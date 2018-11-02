@@ -1,8 +1,13 @@
-package com.huilee.improject.bookreaderproject;
+package com.huilee.improject.bookreaderproject.views.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.huilee.improject.bookreaderproject.R;
+
+/*
+ * Created by huilee on 2018-11-01
+ */
 public class MainActivity extends AppCompatActivity {
 
     @Override
