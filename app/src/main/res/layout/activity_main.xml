@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    tools:context=".views.activities.MainActivity">
+    tools:context=".views.activities.CategoryActivity">
 
 
 
@@ -17,5 +17,7 @@
         android:drawableLeft="@mipmap/ic_launcher"
         android:textSize="20sp"
         android:text="suggest"/>
+
+
 
 </LinearLayout>
