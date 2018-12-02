@@ -1,13 +1,17 @@
 apply plugin: 'com.android.application'
 
+def cfg = rootProject.ext.configuration
+def libs = rootProject.ext.libraries
+
 android {
-    compileSdkVersion 28
+    compileSdkVersion cfg.compileVersion
+    buildToolsVersion cfg.buildToolsVersion
     defaultConfig {
         applicationId "com.huilee.improject.bookreaderproject"
-        minSdkVersion 15
-        targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion cfg.minSdk
+        targetSdkVersion cfg.targetSdk
+        versionCode cfg.versionCode
+        versionName cfg.versionName
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -26,5 +30,5 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
-    implementation 'com.github.lygttpod:RxHttpUtils:2.1.7'
+    implementation "com.github.lygttpod:RxHttpUtils:${libs.RxHttpUtils}"
 }
